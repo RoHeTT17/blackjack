@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+
+    <!--
+        Agregar bootstrap
+        Esta forma se le conoce como CDN (Content Delivery Network), que es un host de
+        contenido el cual nos permite usar la libreria de manera externa. Estamos jalando
+        el recurso en linea. 
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--Agregar archivo de Css-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header class="titulo">BlackJack</header>
+     <!-- row mt-2
+          Esta es una clase personaliza de bootstrap, es para agregar 
+          un espacio en la parte superior del Div.
+
+          Todas las clases que no esten definidas en nuestro archivo de css
+          son de bootstrap
+      -->
+    <div class="row mt-2"> 
+        <div id="divBotones" class="col text-center"> <!--Todo lo que este dentrso este centrado-->
+            <button id = "btnNuevo"   class="btn btn-danger">Nuevo juego</button>
+            <button id = "btnPedir"   class="btn btn-primary">Pedir carta</button>
+            <button id = "btnDetener" class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+            <h1>Jugador 1 - <small>0</small></h1>
+            <!--Vamos a colocar las colocar las cartas que el jugador va mostrando-->
+            <div id="jugador-cartas">
+                <!--img class="carta" src="assets/cartas/10S.png" alt=""-->
+            </div>
+        </div>
+    </div>
+    
+    <div class="row container mt-2">
+        <div class="col">
+            <h1>Computadora - <small>0</small></h1>
+            <!--Vamos a colocar las colocar las cartas que el jugador va mostrando-->
+            <div id="Computadora-cartas">
+                <!--img class="carta" src="assets/cartas/10H.png" alt=""-->
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/*Agregar el mimo estilo a ciertas etiquetas*/
+html, body {
+    margin: 0px;
+    background-color: #2f4f30;
+    color: white;
+}
+
+/* .titulo es el nombre definido en la propiedad class en nuestra etiqueta html*/
+.titulo {
+    text-align: center;
+    background-color: black;
+    color: white; /* Color del teto*/
+    padding: 20px;
+    font-size: 25px;
+}
+
+.carta {
+    /* 
+      Configuración para el tamaño de la imagen de la carta y que se meustren un poco
+      encimadas. 
+    */
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+/* 
+  con el # y el id se hace referencia a un elemento pero por su id
+  Agrega un espacio defiinido a los Div con ese ID. Es para que se 
+  muestre separados aun cuando no hay cartas.  
+*/
+#Computadora-cartas, #jugador-cartas{
+    height: 240px;
+}
