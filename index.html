@@ -29,8 +29,8 @@
     <div class="row mt-2"> 
         <div id="divBotones" class="col text-center"> <!--Todo lo que este dentrso este centrado-->
             <button id = "btnNuevo"   class="btn btn-danger">Nuevo juego</button>
-            <button id = "btnPedir"   class="btn btn-primary">Pedir carta</button>
-            <button id = "btnDetener" class="btn btn-primary">Detener</button>
+            <button id = "btnPedir"   disabled="disabled" class="btn btn-primary">Pedir carta</button>
+            <button id = "btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
         </div>
     </div>
 
@@ -38,7 +38,8 @@
         <div class="col">
             <h1>Jugador 1 - <small>0</small></h1>
             <!--Vamos a colocar las colocar las cartas que el jugador va mostrando-->
-            <div id="jugador-cartas">
+            <!--Se agrega el divCartas para el archivo optimizado.-->
+            <div id="jugador-cartas" class="divCartas">
                 <!--img class="carta" src="assets/cartas/10S.png" alt=""-->
             </div>
         </div>
@@ -48,13 +49,20 @@
         <div class="col">
             <h1>Computadora - <small>0</small></h1>
             <!--Vamos a colocar las colocar las cartas que el jugador va mostrando-->
-            <div id="Computadora-cartas">
+            <!--Se agrega el divCartas para el archivo optimizado.-->
+            <div id="Computadora-cartas" class="divCartas">
                 <!--img class="carta" src="assets/cartas/10H.png" alt=""-->
             </div>
         </div>
     </div>
 
     <script src="assets/js/underscore-min.js"></script>
-    <script src="assets/js/juego.js"></script>
+    <!-- <script src="assets/js/juego.js"></script> -->
+    <script src="assets/js/juego-optimizado.js"></script>
+
+    <script>
+        //inicializar desde aquí el juego
+        miModulo.nuevoJuego();
+    </script>
 </body>
 </html>
